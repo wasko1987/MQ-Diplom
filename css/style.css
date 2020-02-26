@@ -37,6 +37,7 @@
     }
 
     .h1-wrapper {
+        width: 90%;
         margin: auto;
     }
 
@@ -91,7 +92,7 @@
 }
 
 @media (min-width: 390px) and (max-width: 640px) {
-    
+
     .second {
         max-width: 300px;  
         margin-left: auto;  
@@ -269,6 +270,7 @@
 @media (min-width: 641px) and (orientation: landscape) {
 
     .h1-wrapper {
+        width: 85%;
         margin-top: 2vh;
     }
 
@@ -380,7 +382,7 @@
     }
     
     .actions-img {
-        width: 50vw;
+        width: calc(50vw - 8px);
     }
 
     .number {
@@ -401,6 +403,8 @@
     .actions .content-element:nth-child(even) .number {
         left: -35px;
     }
+
+
     
     .footer-logo-text {
         display: flex;
@@ -442,6 +446,7 @@
     }
 
     .h1-wrapper {
+        width: 65%;
         margin-top: 20vh;
     }
     .second {
@@ -451,7 +456,6 @@
 
 @media (min-width: 961px) and (max-width: 1920px) {
     .h1-wrapper {
-        width: 70%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -470,10 +474,16 @@
     }
 }
 
+@media (min-width: 1400px) {
+    .h1-wrapper {
+        width: 50%;
+    }
+}
+
 @media (min-width: 1920px) {
 
     .h1-wrapper {
-        width: 1532px !important;
+        width: 900px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -484,6 +494,10 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
 }
 
 .header {
@@ -532,9 +546,7 @@ body {
     margin-left: auto;
 }
 
-.h1-wrapper {
-    width: 80%;
-}
+
 
 .h1 {
     color: #fff;
@@ -677,7 +689,6 @@ body {
 img {
     display: block;
     width: 100%;
-    height: auto;
 }
 
 .number {
